@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Rubik:wght@500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, 'Helvetica';
+    font-weight: 500;
+}
+
+.width {
+    width: 45%;
+}
+
+.orange {
+    color: orange;
+}
+
+.send {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.main-section {
+    margin-top: 4rem;
+}
+.strike {
+    text-decoration:line-through;
+    margin-left: 1.2rem;
+}
+
+button {
+    padding: 1rem ;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    color: #686868;
+    margin-top: 5rem;
+}
+
+/* main body */
+
+/* column-right */
+
+h2 {
+    color: #787878;
+}
+.input-icon i {
+    position: absolute;
+      padding: 10px;
+      min-width: 45px;
+      color: #ddd;
+}
+
+.right {
+    right: 10px;
+    cursor: pointer;
+}
+
+.input-icon {
+    margin: 1rem 0;
+}
+
+.check {
+    display: flex;
+    margin: 2rem 0;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .input-icon input[type="text"]:nth-child(1) {
+    margin-right: 1rem;
+}
+.check p {
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+
+.submit:hover {
+    background-color: #FF8C00;
+}
+
+.submit {
+    padding: 1rem 3rem;
+    border: 0;
+    transition: .3s background-color;
+    margin: 1rem 0;
+    display: flex;
+    text-align: right;
+    background-color: orange;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 800;
+    justify-content: flex-start;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    transform: scale(2);
+}
+
+span {
+    margin:  0 1rem;
+    font-weight: 800;
+    padding: 3px 2px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #D8D8D8;
+}
+
+label {
+    display: block;
+}
+
+.input-field:focus {
+    outline: 0;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 2rem;
+    border-radius: 10px;
+   color: #666;
+   border: 3px solid #ddd;
+   font-weight: 600;
+}
+
+
+.column-top,
+.column-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.user-infor {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+.user-infor h4 {
+    padding: 1rem 0;
+    font-size: .89rem
+}
+
+.img img:hover {
+    cursor: pointer;
+    transform: scale(-.9);
+}
+
+.btn {
+    display: flex;
+    margin-top: 6rem;
+
+}
+.bottom-txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem
+}
+
+.para {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom {
+    margin-top: 2rem ;
+}
+
+.btn button {
+    font-weight: 900;
+    border: 3px solid gray;
+    border-radius: 20px;
+  
+}
+
+.bottom-txt:nth-child(1) {
+    border-bottom: 2px solid #eee;
+
+    border-top: 2px solid #eee;
+}
+
+.column-left {
+    background-color: #D8D8D8;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+/* MEDIA QUERY */
+
+@media(min-width: 768px) {
+    .main-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+}
+
+@media(max-width: 350px) {
+    .btn button {
+        padding: .2rem .1rem;
+    }
+
+    .user-infor {
+        margin-left: .8rem ;
+    }
+
+        .user-infor h4 {
+            font-size: .5rem
+        }
+        .strike {
+            margin-left: .5rem;
+        }
+        .para {
+            font-size: .5rem
+        }
+
+        .btn {
+            margin-top: 1rem;
+
+        }
+
+        .main-section {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+      h2 {
+          margin: 1.5rem 0;
+          font-size: 1.2rem
+      }
+        .submit {
+            padding: .8rem
+        }
+
+        .img img {
+            width: 150px;
+            height: 100%;
+        }
+
+        span {
+            margin: 0 .5rem;
+            padding: 1px;
+        }
+
+        .bottom-txt {
+            font-size: .8rem;
+        }
+}
